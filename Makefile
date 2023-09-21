@@ -18,9 +18,9 @@ test2:
 	python myapp/test_lib.py
 
 test3:
-	 python -m pytest -vv --nbval -cov=mylib -cov=main myapp/*.ipynb
+	 python -m pytest -vv --nbval -cov=myapp -cov=main *.ipynb
 
 run:
 	python myapp/script.py
 		
-all: install format lint test run
+all: install format lint test1  test2 test3 run
