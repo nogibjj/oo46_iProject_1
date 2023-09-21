@@ -15,10 +15,10 @@ test1:
 	python myapp/test_script.py
 
 test2:
-	py.test --nbval myapp/notebook.ipynb
+	python myapp/test_lib.py
 
 test3:
-	python myapp/test_lib
+	 py.test --nbval myapp/notebook.ipynb
 
 run:
 	python myapp/main.py

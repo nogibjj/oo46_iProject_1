@@ -31,7 +31,9 @@ jobs:
         with:
           python-version: ${{matrix.python-version}}
         #install dependencies
-      - run: |
+
+      - name: Install dependencies
+        run: |
           make install
 
       - name: Format
