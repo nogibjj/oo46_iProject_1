@@ -9,13 +9,13 @@
 
 ## Individual Project deliverables:
 
-1. [Jupyter Notebook](https://github.com/nogibjj/oo46_iProject_1/blob/main/myapp/notebook.ipynb) with:
+1. [Jupyter Notebook](https://github.com/nogibjj/oo46_iProject_1/blob/main/notebook.ipynb) with:
 
 - Cells that perform descriptive statistics using Pandas.
 - Tested by using nbval plugin for pytest
 
-2. [Python Script](https://github.com/nogibjj/oo46_iProject_1/blob/main/myapp/script.py) performing the same descriptive statistics using Pandas
-3. [lib.py](https://github.com/nogibjj/oo46_iProject_1/blob/main/myapp/lib.py) file that shares the common code between the script and notebook
+2. [Python Script](https://github.com/nogibjj/oo46_iProject_1/blob/main/script.py) performing the same descriptive statistics using Pandas
+3. [lib.py](https://github.com/nogibjj/oo46_iProject_1/blob/main/lib.py) file that shares the common code between the script and notebook
 4. [Makefile](https://github.com/nogibjj/oo46_iProject_1/blob/main/Makefile) with the following:
 
 - Run all tests (must test notebook and script and lib)
@@ -23,8 +23,8 @@
 - Lints code with Ruff
 - Installs code via: pip install -r [requirements.txt](https://github.com/nogibjj/oo46_iProject_1/blob/main/requirements.txt)
 
-5. [test_script.py](https://github.com/nogibjj/oo46_iProject_1/blob/main/myapp/test_script.py) to test script
-6. [test_lib.py](https://github.com/nogibjj/oo46_iProject_1/blob/main/myapp/test_lib.py) to test some library functions
+5. [test_script.py](https://github.com/nogibjj/oo46_iProject_1/blob/main/test_script.py) to test script
+6. [test_lib.py](https://github.com/nogibjj/oo46_iProject_1/blob/main/test_lib.py) to test some library functions
 7. GitHub Actions performs all four Makefile commands with badges for
    each one in the README.md
 

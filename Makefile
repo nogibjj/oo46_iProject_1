@@ -20,7 +20,5 @@ test2:
 test3:
 	 python -m pytest -vv --nbval -cov=myapp -cov=main *.ipynb
 
-run:
-	python script.py
 		
-all: install format lint test1  test2 test3 run
+all: install format lint test1  test2 test3 
