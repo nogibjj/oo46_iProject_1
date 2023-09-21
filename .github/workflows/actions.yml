@@ -13,19 +13,15 @@ jobs:
   test:
     #Operating system or environment for exectution
     runs-on: ubuntu-latest
-    #Set default working directory
-    strategy:
-      matrix:
-        python-version: [3.9, 3.10.x, 3.11]
-
-    #Steps to define the execution of workflow
+   
+        #Steps to define the execution of workflow
     steps:
       - uses: actions/checkout@v3
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: ${{matrix.python-version}}
+          python-version: 3.11
         #install dependencies
 
       - name: Install dependencies
