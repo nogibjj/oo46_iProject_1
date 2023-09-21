@@ -18,7 +18,7 @@ test2:
 	python myapp/test_lib.py
 
 test3:
-	 python -m pytest -vv --nbval -cov=myapp -cov=main myapp/*.ipynb
+	 python -m pytest -vv --nbval -cov=myapp -cov=main *.ipynb
 
 run:
 	python myapp/script.py

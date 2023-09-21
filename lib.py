@@ -2,7 +2,7 @@ import pandas as pd
 
 
 def read_dataset():
-    df = pd.read_csv("./dsets/car_sales_data.csv")
+    df = pd.read_csv("dsets/car_sales_data.csv")
     return df
 
 
