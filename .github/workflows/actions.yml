@@ -12,9 +12,10 @@ jobs:
   #Test jobs to be executed
   test:
     #Operating system or environment for exectution
-    runs-on: ubuntu-latest
-   
-        #Steps to define the execution of workflow
+    runs-on:
+      ubuntu-latest
+
+      #Steps to define the execution of workflow
     steps:
       - uses: actions/checkout@v3
 
@@ -47,7 +48,3 @@ jobs:
       - name: Test3
         run: |
           make test3
-
-      - name: Run App
-        run: |
-          make deploy
