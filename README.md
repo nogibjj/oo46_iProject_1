@@ -1,28 +1,51 @@
-[![Python_Temp_Demo](https://github.com/nogibjj/oo46_Python_Temp/actions/workflows/actions.yml/badge.svg)][def]
+[![Python_Temp_Demo](https://github.com/nogibjj/oo46_iProject_1/actions/workflows/actions.yml/badge.svg)][def]
 
-# Template for Python projects - Week 2
+# Template for Python projects (Week 3)
 
-## The current implementation of the Mini-project can be executed as follows:
+## The current implementation of the Mini-project (Week_3) can be executed as follows:
 
-1. All dependencies needed for execution can be found in the requirement.txt file
-2. These dependencies will be installed  by github actions via Make file.
-3. Please refer the requirements.txt for manual intallations: use Make file. 
+1. All dependencies needed for execution can be found in the [requirement.txt](https://github.com/nogibjj/oo46_iProject_1/blob/main/requirements.txt) file
+2. These dependencies will be installed by github actions using the Make file.
 
-## Mini-project deliverables:
-1. The myapp/main.py file can be thought of as the main app entry in the current implementation
-2. It imports several libraries to read a csv file (automobiles.csv) from the dsets folder and performs the following:
-    * Creates and saves both a descriptive analysis and a distribution pie chart from the input file
-        * the output is then saved in the reports folder as a pdf file (Automobiles_Descriptive_Stats.pdf)
-    * It applys mpg_cat() function on mpg column of the input file and creates an excell sheet with the results
-        * the output of this process is also saved in the reports folder under the name: automobiles_updated.xlsx
-   
-    * It then alerts the user with a success message
+## Individual Project deliverables:
+
+1 [Jupyter Notebook](https://github.com/nogibjj/oo46_iProject_1/blob/main/myapp/notebook.ipynb) with:
+
+- Cells that perform descriptive statistics using Pandas.
+- Tested by using nbval plugin for pytest
+
+2. [Python Script](https://github.com/nogibjj/oo46_iProject_1/blob/main/myapp/script.py) performing the same descriptive statistics using Pandas
+3. [lib.py](https://github.com/nogibjj/oo46_iProject_1/blob/main/myapp/lib.py) file that shares the common code between the script and notebook
+4. [Makefile](https://github.com/nogibjj/oo46_iProject_1/blob/main/Makefile) with the following:
+
+- Run all tests (must test notebook and script and lib)
+- Formats code with Python black
+- Lints code with Ruff
+- Installs code via: pip install -r [requirements.txt](https://github.com/nogibjj/oo46_iProject_1/blob/main/requirements.txt)
+
+5. [test_script.py](https://github.com/nogibjj/oo46_iProject_1/blob/main/myapp/test_script.py) to test script
+6. [test_lib.py](https://github.com/nogibjj/oo46_iProject_1/blob/main/myapp/test_lib.py) to test some library functions
+7. GitHub Actions performs all four Makefile commands with badges for
+   each one in the README.md
 
 ## Testing...
-1. A simple unit test implementation is provided in myapp/test_main.py as follows:
-    * test_col_exist function --> test if a new column exist after calling mpg_cat function on a dataframe
-    * test_my_stats --> uses pandas's assert_frame_equal testing feature to confirm the quality of two dataframes
-2. This test wll also be executed by github actions via Make file. However, manual testing can also be done either with the Make file or by running python myapp/test_main.py
 
+1. A simple testing implementation is provided in myapp/test_script.py, test_lib.py as follows:
+   - test_col_exist function --> test for the existence of a column as expected
+   - test_my_stats --> uses pandas' assert_frame_equal testing feature to confirm the quality of two dataframes
+   - and another testing involving the jupyter notebook using pytest with the nbval plugin
+2. This test wll also be executed by github actions via the make file. However, manual testing can also be done either via Make file.
 
-[def]: https://github.com/nogibjj/oo46_Python_Temp/actions/workflows/actions.yml
+### Top Sales Report by sales persons from the car sales dataset
+
+![Top Sales Report](reports/tsp.PNG)
+
+### Top Sales Report by car make from the car sales dataset
+
+![Top sales by make](reports/msc.PNG)
+
+### Top Sales Report by car model from the car sales dataset
+
+![Top sales by make](reports/msm.PNG)
+
+[def]: https://https://github.com/nogibjj/oo46_iProject_1/actions/workflows/actions.yml

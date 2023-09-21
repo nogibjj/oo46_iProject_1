@@ -6,15 +6,21 @@ format:
 	black myapp/*.py 
 
 lint:
-	pylint --disable=R,C myapp/*.py
+	ruff check myapp/*.py
 
 #  container-lint:
 #  	docker run --rm -i hadolint/hadolint < Dockerfile
 
-test:
-	python myapp/test_main.py
+test1:
+	python myapp/test_script.py
 
-deploy:
+test2:
+	py.test --nbval myapp/notebook.ipynb
+
+test3:
+	python myapp/test_lib
+
+run:
 	python myapp/main.py
 		
-all: install format lint test deploy
+all: install format lint test run
