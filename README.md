@@ -9,7 +9,7 @@
 
 ## Individual Project deliverables:
 
-1 [Jupyter Notebook](https://github.com/nogibjj/oo46_iProject_1/blob/main/myapp/notebook.ipynb) with:
+1. [Jupyter Notebook](https://github.com/nogibjj/oo46_iProject_1/blob/main/myapp/notebook.ipynb) with:
 
 - Cells that perform descriptive statistics using Pandas.
 - Tested by using nbval plugin for pytest
@@ -38,14 +38,14 @@
 
 ### Top Sales Report by sales persons from the car sales dataset
 
-![Top Sales Report](reports/tsp.PNG)
+![Top Sales Report](reports/tsp.png)
 
 ### Top Sales Report by car make from the car sales dataset
 
-![Top sales by make](reports/msc.PNG)
+![Top sales by make](reports/msc.png)
 
 ### Top Sales Report by car model from the car sales dataset
 
-![Top sales by make](reports/msm.PNG)
+![Top sales by make](reports/msm.png)
 
 [def]: https://https://github.com/nogibjj/oo46_iProject_1/actions/workflows/actions.yml

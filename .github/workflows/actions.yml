@@ -14,10 +14,6 @@ jobs:
     #Operating system or environment for exectution
     runs-on: ubuntu-latest
     #Set default working directory
-    defaults:
-      run:
-        working-directory: ./myapp/
-    # Set prefered Python versions
     strategy:
       matrix:
         python-version: [3.9, 3.10.x, 3.11]

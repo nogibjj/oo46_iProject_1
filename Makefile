@@ -21,6 +21,6 @@ test3:
 	 py.test --nbval myapp/notebook.ipynb
 
 run:
-	python myapp/main.py
+	python myapp/script.py
 		
 all: install format lint test run
