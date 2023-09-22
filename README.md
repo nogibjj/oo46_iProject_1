@@ -1,8 +1,8 @@
 [![Python_Temp_Demo](https://github.com/nogibjj/oo46_iProject_1/actions/workflows/actions.yml/badge.svg)][def]
 
-# Template for Python projects (Week 3)
+# Individual Project 1
 
-## The current implementation of the Mini-project (Week_3) can be executed as follows:
+## The current implementation of the individual project can be executed as follows:
 
 1. All dependencies needed for execution can be found in the [requirement.txt](https://github.com/nogibjj/oo46_iProject_1/blob/main/requirements.txt) file
 2. These dependencies will be installed by github actions using the Make file.
@@ -33,7 +33,7 @@
 1. A simple testing implementation is provided in myapp/test_script.py, test_lib.py as follows:
    - test_col_exist function --> test for the existence of a column as expected
    - test_my_stats --> uses pandas' assert_frame_equal testing feature to confirm the quality of two dataframes
-   - and another testing involving the jupyter notebook using pytest with the nbval plugin
+   - and another testing involving the jupyter notebook using pytest with the nbval plugin.
 2. This test wll also be executed by github actions via the make file. However, manual testing can also be done either via Make file.
 
 ### Top Sales Report by sales persons from the car sales dataset
@@ -47,5 +47,9 @@
 ### Top Sales Report by car model from the car sales dataset
 
 ![Top sales by make](reports/msm.png)
+
+## Video Link...
+
+[Check out this link for a quick intro](https://youtu.be/g4mc7SAnTXs)
 
 [def]: https://https://github.com/nogibjj/oo46_iProject_1/actions/workflows/actions.yml
