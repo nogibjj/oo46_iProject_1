@@ -29,7 +29,7 @@ if __name__ == "__main__":
     fig, ax = plt.subplots(figsize=(12, 8))
     ax.pie(msc, labels=msc.index, autopct="%1.1f%%", startangle=90)
     ax.axis("equal")
-    ax.set_title("Distribution of Car Makes")
+    ax.set_title("Most Sold Car Makes")
     plt.savefig("./reports/msc.png")
     plt.show()
 
